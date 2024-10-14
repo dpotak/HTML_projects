@@ -6,3 +6,16 @@ body {
 h1, h2 {
     text-align: center;
 }
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.p1 , .p2 {
+    margin: 0px;
+    padding: 0px;
+}
