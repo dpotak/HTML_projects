@@ -16,11 +16,15 @@ h1 {
 h2 {
     font-size: 25px;
     margin-top: 0px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .p1 , .p2 {
     margin: 0px;
     padding: 0px;
+}
+
+section {
+    
 }
 
