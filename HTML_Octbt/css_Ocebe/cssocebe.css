@@ -35,3 +35,11 @@ main {
     width: 900px;
     margin: auto;
 }
+
+li {
+    margin-top: 10px;
+}
+
+.zagolovki_1 {
+    border: none;
+}
