@@ -20,6 +20,10 @@ h2 {
     text-align: left; /* Выровнено по левому краю для секций */
 }
 
+.h2_1 {
+    border-bottom: 2px solid #e3e3e3;
+}
+
 section {
     margin: 50px 0; /* Внешние отступы для секций */
     padding: 0 50px; /* Внутренние отступы для секций */
