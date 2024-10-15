@@ -1,6 +1,9 @@
 body {
+    margin: 0;
     color: #333;
     font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.5;
 }
 
 h1, h2 {
@@ -19,12 +22,16 @@ h2 {
     padding-bottom: 30px;
 }
 
+.h2_1 {
+    border-bottom: 2px solid #e3e3e3;
+}
+
 .p1 , .p2 {
     margin: 0px;
     padding: 0px;
 }
 
-section {
-    
-}
-
+main {
+    width: 900px;
+    margin: auto;
+  }
