@@ -13,8 +13,11 @@ body {
     background-color: rgb(219, 219, 219);
 }
 
-.div1, .div2 , .div3 , .div4 , .div5 {
-    padding: 1px;
-    margin: 1px;
+.div1, .div2 , .div3 , .div4 , .div5 , label {
+    padding: 10px;
+}
+
+label , input , button {
+    float: left;
 }
 
