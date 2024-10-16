@@ -31,7 +31,7 @@ label, button, input {
 }
 
 input {
-    border-radius: 5px solid;
+    border-radius: 5px;
 }
 
 label, h2 {
