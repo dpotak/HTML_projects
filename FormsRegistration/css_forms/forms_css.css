@@ -14,7 +14,7 @@ body {
 
 .div1, .div2 , .div3 , .div4 , .div5 , label {
     padding: 3px;
-    margin-left: 3px;
+    margin-left: 7px;
 }
 
 button {
@@ -22,6 +22,7 @@ button {
     background-color: rgb(68, 68, 250);
     border-radius: 3px;
     border: 2px solid rgb(68, 68, 250);;
+    margin-top: 15px;
 }
 
 label, button, input {
@@ -29,3 +30,10 @@ label, button, input {
     flex-direction: column; /* Элементы располагаются в колонку */
 }
 
+input {
+    border-radius: 5px solid;
+}
+
+label, h2 {
+    font-weight: bold;
+}
