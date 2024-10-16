@@ -2,7 +2,7 @@
     text-align: center;
     margin-top: 200px;
     margin-left: 520px;
-    width: 450px;
+    width: 300px;
     height: 350px;
     border: 1px solid white;
     background-color: white;
@@ -11,5 +11,10 @@
 
 body {
     background-color: rgb(219, 219, 219);
+}
+
+.div1, .div2 , .div3 , .div4 , .div5 {
+    padding: 1px;
+    margin: 1px;
 }
 
