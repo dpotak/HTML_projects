@@ -28,3 +28,4 @@ label, button, input {
     display: flex; /* Включаем flexbox */
     flex-direction: column; /* Элементы располагаются в колонку */
 }
+
