@@ -26,8 +26,8 @@ button {
 }
 
 label, button, input {
-    display: flex; /* Включаем flexbox */
-    flex-direction: column; /* Элементы располагаются в колонку */
+    display: flex; 
+    flex-direction: column; 
 }
 
 input {
@@ -37,3 +37,8 @@ input {
 label, h2 {
     font-weight: bold;
 }
+
+h2 {
+    margin-left: 80px;
+}
+
