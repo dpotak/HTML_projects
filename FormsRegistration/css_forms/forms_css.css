@@ -20,7 +20,9 @@ body {
 button {
     color: white;
     background-color: rgb(68, 68, 250);
-    border-radius: 3px;
+    border-radius: 5px;
+    width: 100px;
+    height: 22px;
     border: 2px solid rgb(68, 68, 250);;
     margin-top: 15px;
 }
