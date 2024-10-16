@@ -2,3 +2,7 @@
     text-align: center;
     margin-top: 250px;
 }
+
+body {
+    background-color: lightgray;
+}
