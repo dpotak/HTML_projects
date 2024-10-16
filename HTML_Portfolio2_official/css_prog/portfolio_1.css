@@ -1,0 +1,161 @@
+.body1 {
+    background-color: black;
+}
+
+.nav_list {
+    margin-left: 35px;
+}
+
+.nav_div_link {
+    margin-left: 10px;
+    font-size: 15px;
+    text-align: center; 
+    color: rgb(9, 151, 9);
+}
+
+.nav_div_link_2 {
+    margin-left: 8px;
+}
+
+.nav_div_link_3 {
+    margin-left: 730px;
+}
+
+.button_1 {
+    background-color: #040445;
+}
+
+.section_1 {
+    height: 100px;
+    background-color: #01011c;
+}
+
+.nav_div_link {
+    border-radius: 10px;
+    background-color: black;
+}
+
+i {
+    color: rgb(9, 151, 9);
+}
+
+.nav_div_link_1 {
+    margin-right: 35px;
+}
+
+h1, h3, h2, h4, p {
+    color: white;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.Information_About {
+    margin-left: 50px;
+}
+
+.section_3 {
+    margin-left: 50px;
+}
+
+.email {
+    border-radius: 10px;
+    background-color: #040445;
+    color: white;
+}
+
+.image_foto {
+    float: right;
+}
+
+.image_foto {
+    margin-right: 40px;
+}
+
+.btn_gmail_copy, .h4_gmail {
+    display: flex;
+    margin-left: 8px;
+}
+
+.h4_2, .h3_1 {
+    padding: 1px;
+    margin: 1px;
+}
+
+.h2_1 , .h3_2 {
+    padding: 1px;
+    margin: 1px;
+}
+
+.courses {
+    padding: 1px;
+    margin: 1px;
+}
+
+.pp_1 , .pp_2, .pp_3 {
+    padding: 1px;
+    margin: 1px;
+}
+
+.cert_text1, .cert_text2, .cert_text3, .cert_text4 {
+    width: 300px;
+    height: 140px;
+    border: 2px #040445 solid;
+    background: #040445;
+    margin-left: 15px;
+}
+
+.kvadrat_certificate_info {
+    display: flex;
+}
+
+.cert_text5 {
+    width: 300px;
+    height: 140px;
+    border: 2px #040445 solid;
+    background: #040445;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.h4_cert {
+    padding: 1px;
+    margin: 1px;
+}
+
+.Experience_job_1 {
+    width: 750px;
+    height: 400px;
+    border: 2px #040445 solid;
+    background: #040445;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+.Experience_class {
+    margin-left: 50px;
+}
+
+.Contacts_class {
+    margin-left: 50px;
+}
+
+
+.btn_1_link {
+    border-radius: 1px;
+    margin: 2px;
+}
+
+.Contacts_job_1 {
+    display: flex;
+    margin-left: 60px;
+}
