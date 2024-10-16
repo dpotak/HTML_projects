@@ -1,7 +1,6 @@
 .Forms_reg {
-    text-align: center;
-    margin-top: 200px;
-    margin-left: 520px;
+    margin-top: 180px;
+    margin-left: 560px;
     width: 300px;
     height: 350px;
     border: 1px solid white;
@@ -14,10 +13,18 @@ body {
 }
 
 .div1, .div2 , .div3 , .div4 , .div5 , label {
-    padding: 10px;
+    padding: 3px;
+    margin-left: 3px;
 }
 
-label , input , button {
-    float: left;
+button {
+    color: white;
+    background-color: rgb(68, 68, 250);
+    border-radius: 3px;
+    border: 2px solid rgb(68, 68, 250);;
 }
 
+label, button, input {
+    display: flex; /* Включаем flexbox */
+    flex-direction: column; /* Элементы располагаются в колонку */
+}
