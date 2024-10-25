@@ -118,7 +118,7 @@ h2 {
     display: flex;
 }
 
-.cert_text5 , .cert_text6 {
+.cert_text5 , .cert_text6 , .cert_text7 {
     width: 300px;
     height: 140px;
     border: 2px #040445 solid;
