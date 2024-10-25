@@ -118,13 +118,17 @@ h2 {
     display: flex;
 }
 
-.cert_text5 {
+.cert_text5 , .cert_text6 {
     width: 300px;
     height: 140px;
     border: 2px #040445 solid;
     background: #040445;
     margin-top: 15px;
     margin-left: 15px;
+}
+
+.kvadrat_certificate_info_2 {
+    display: flex;
 }
 
 .h4_cert {
