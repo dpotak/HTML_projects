@@ -108,7 +108,7 @@ h2 {
 
 .cert_text1, .cert_text2, .cert_text3, .cert_text4 {
     width: 300px;
-    height: 140px;
+    height: 190px;
     border: 2px #040445 solid;
     background: #040445;
     margin-left: 15px;
@@ -120,7 +120,7 @@ h2 {
 
 .cert_text5 , .cert_text6 , .cert_text7 {
     width: 300px;
-    height: 140px;
+    height: 190px;
     border: 2px #040445 solid;
     background: #040445;
     margin-top: 15px;
