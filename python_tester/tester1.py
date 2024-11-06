@@ -35,27 +35,37 @@ class TestContentCSSCode():
         driver.get("C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\Portfolio.html")
         
         try:
-            # Ожидание появления заголовка <h1> на странице
+            # Expecting the title <h1> on the page
             header = WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.TAG_NAME, "h1"))
             )
             
-            # Получение CSS свойства 'font-size'
+            # Gaining CSS a font-size character
             header_font_size = header.value_of_css_property("font-size")
             expected_font_size = "35px"
             
-            # Проверка, что размер шрифта совпадает с ожидаемым
+            # Check that the font size matches the expected font
             assert header_font_size == expected_font_size, f"Expected font size {expected_font_size}, but got {header_font_size}"
 
-            header = driver.find_elements(By.TAG_NAME, 'h1')
-            if header:
+            # Verification of the presence of element h1
+            header_h1 = driver.find_elements(By.TAG_NAME, 'h1')
+            if header_h1:
                 print('Element found!')
             else:
                 print('Element not found!')
-        
+
+            # Verification of the presence of element h2
+            header_h2 = driver.find_elements(By.TAG_NAME, 'h2')
+            if header_h2:
+                print('')
+            else:
+                print('')
+
+
         finally:
             # Закрытие драйвера
             driver.quit()
+
 
 
 if __name__ == "__main__":
