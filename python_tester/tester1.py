@@ -27,7 +27,7 @@ class TestContentHTMLCode(unittest.TestCase):
 
 # Tester css 
 class TestContentCSSCode():
-    
+    # Start testing CSS file
     def css_test1():
         driver = webdriver.Chrome()
         driver.get("C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\Portfolio.html")
