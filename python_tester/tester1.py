@@ -92,7 +92,21 @@ class TestContentCSSCode():
             else:
                 print('Element not found!')
 
-            
+            # 
+            link_elements = driver.find_elements(By.TAG_NAME, 'link')
+            if link_elements:
+                print('Done!')
+
+                for link in link_elements:
+                    if link.get_attribute('rel'):
+                        print('Done!')
+                    else:
+                        print('None!')
+                    
+                    if link.get_attribute('href'):
+                        print('Done!')
+                    else:
+                        print('None!')
 
 
         finally:
