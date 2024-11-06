@@ -61,6 +61,21 @@ class TestContentCSSCode():
             else:
                 print('Element not found!')
 
+            # Verification of the presence of element h3
+            header_h3 = driver.find_elements(By.TAG_NAME, 'h3')
+            if header_h3:
+                print('Element found!')
+            else:
+                print('Element not found!')
+
+            # Verification of the presence of element h4
+            header_h4 = driver.find_elements(By.TAG_NAME, 'h4')
+            if header_h4:
+                print('Element found!')
+            else:
+                print('Element not found!')
+
+
 
         finally:
             # Закрытие драйвера
