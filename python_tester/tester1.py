@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 # Tester HTML
 class TestContentHTMLCode(unittest.TestCase):
@@ -18,19 +20,30 @@ class TestContentHTMLCode(unittest.TestCase):
         self.assertEqual(title.string, "Test Page")
 
 # Tester css 
-class TestContentCSSCode(unittest.TestCase):
-    # Open file css
-    file_code_css = "C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\css_prog\\portfolio_1.css"
-    with open (file_code_css, "r") as file_css:
-        css_code = file_css.read()
+class TestContentCSSCode():
     
     def css_test1():
         driver = webdriver.Chrome()
-        driver.get("C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\css_prog\\portfolio_1.css")
+        driver.get("C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\Portfolio.html")
         
-        header = driver.find_element(By.TAG_NAME, "h1")
+        try:
+            # Ожидание появления заголовка <h1> на странице
+            header = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.TAG_NAME, "h1"))
+            )
+            
+            # Получение CSS свойства 'font-size'
+            header_font_size = header.value_of_css_property("font-size")
+            expected_font_size = "32px"
+            
+            # Проверка, что размер шрифта совпадает с ожидаемым
+            assert header_font_size == expected_font_size, f"Expected font size {expected_font_size}, but got {header_font_size}"
         
-        driver.quit()
+        finally:
+            # Закрытие драйвера
+            driver.quit()
 
 if __name__ == "__main__":
+    TestContentCSSCode.css_test1()
     unittest.main()
+
