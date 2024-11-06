@@ -16,7 +16,7 @@ class TestContentHTMLCode(unittest.TestCase):
 
     def title_test(self):
         title = self.soup.title
-        self.assertIsNotNone(title)
+        self.assertIsNone(title)
         self.assertEqual(title.string, "Test Page")
 
     def h1_test(self):
