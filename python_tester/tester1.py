@@ -16,12 +16,12 @@ class TestContentHTMLCode(unittest.TestCase):
 
     def title_test(self):
         title = self.soup.title
-        self.assertIsNone(title)
+        self.assertIsNotNone(title)
         self.assertEqual(title.string, "Test Page")
 
     def h1_test(self):
         h1 = self.soup.find('h1')
-        self.assertIsNone(h1)
+        self.assertIsNotNone(h1)
         self.assertEqual(h1.string, "h1 , done!")
 
     def body_test(self):
