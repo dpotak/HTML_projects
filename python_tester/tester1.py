@@ -19,6 +19,12 @@ class TestContentHTMLCode(unittest.TestCase):
         self.assertIsNotNone(title)
         self.assertEqual(title.string, "Test Page")
 
+    def h1_test(self):
+        pass
+
+    def body_test(self):
+        pass
+
 # Tester css 
 class TestContentCSSCode():
     
