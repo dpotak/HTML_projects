@@ -20,7 +20,9 @@ class TestContentHTMLCode(unittest.TestCase):
         self.assertEqual(title.string, "Test Page")
 
     def h1_test(self):
-        pass
+        h1 = self.soup.find('h1')
+        self.assertIsNone(h1)
+        self.assertEqual(h1.string, "h1 , done!")
 
     def body_test(self):
         pass
@@ -44,10 +46,17 @@ class TestContentCSSCode():
             
             # Проверка, что размер шрифта совпадает с ожидаемым
             assert header_font_size == expected_font_size, f"Expected font size {expected_font_size}, but got {header_font_size}"
+
+            header = driver.find_elements(By.TAG_NAME, 'h1')
+            if header:
+                print('Element found!')
+            else:
+                print('Element not found!')
         
         finally:
             # Закрытие драйвера
             driver.quit()
+
 
 if __name__ == "__main__":
     TestContentCSSCode.css_test1()
