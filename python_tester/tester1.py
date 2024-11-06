@@ -23,12 +23,14 @@ class TestContentCSSCode(unittest.TestCase):
     file_code_css = "C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\css_prog\\portfolio_1.css"
     with open (file_code_css, "r") as file_css:
         css_code = file_css.read()
-
-    driver = webdriver.Chrome()
-    driver.get("C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\css_prog\\portfolio_1.css")
-
+    
     def css_test1():
-        pass
+        driver = webdriver.Chrome()
+        driver.get("C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\css_prog\\portfolio_1.css")
+        
+        header = driver.find_element(By.TAG_NAME, "h1")
+        
+        driver.quit()
 
 if __name__ == "__main__":
     unittest.main()
