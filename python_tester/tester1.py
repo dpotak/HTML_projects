@@ -57,9 +57,9 @@ class TestContentCSSCode():
             # Verification of the presence of element h2
             header_h2 = driver.find_elements(By.TAG_NAME, 'h2')
             if header_h2:
-                print('')
+                print('Element found!')
             else:
-                print('')
+                print('Element not found!')
 
 
         finally:
