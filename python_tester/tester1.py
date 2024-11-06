@@ -16,16 +16,17 @@ class TestContentHTMLCode(unittest.TestCase):
 
     def title_test(self):
         title = self.soup.title
-        self.assertIsNotNone(title)
+        self.assertIsNone(title)
         self.assertEqual(title.string, "Test Page")
 
     def h1_test(self):
         h1 = self.soup.find('h1')
-        self.assertIsNotNone(h1)
-        self.assertEqual(h1.string, "h1 , done!")
+        self.assertIsNone(h1, "<h1> tag not found!")
+        self.assertEqual(h1.string, "h1 , done!", "<h1> content does not match.")
 
-    def body_test(self):
-        pass
+    def h6_test(self):
+        h6 = self.soup.find('h6')
+        self.assertIsNone(h6, "<h6> tag not found!")
 
 # Tester css 
 class TestContentCSSCode():
@@ -88,6 +89,8 @@ class TestContentCSSCode():
                 print('Element found!')
             else:
                 print('Element not found!')
+
+            
 
 
         finally:
