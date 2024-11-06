@@ -34,7 +34,7 @@ class TestContentCSSCode():
             
             # Получение CSS свойства 'font-size'
             header_font_size = header.value_of_css_property("font-size")
-            expected_font_size = "32px"
+            expected_font_size = "35px"
             
             # Проверка, что размер шрифта совпадает с ожидаемым
             assert header_font_size == expected_font_size, f"Expected font size {expected_font_size}, but got {header_font_size}"
