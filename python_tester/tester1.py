@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import unittest
 
+# Tester HTML
 class TestContentHTMLCode(unittest.TestCase):
     #
     file_code = "C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\Portfolio.html"
@@ -14,6 +15,15 @@ class TestContentHTMLCode(unittest.TestCase):
         self.assertIsNotNone(title)
         self.assertEqual(title.string, "Test Page")
 
+# Tester css 
+class TestContentCSSCode(unittest.TestCase):
+    #
+    file_code_css = "C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\css_prog\\portfolio_1.css"
+    with open (file_code_css, "r") as file_css:
+        css_code = file_css.read()
+
+    def css_test1():
+        pass
 
 if __name__ == "__main__":
     unittest.main()
