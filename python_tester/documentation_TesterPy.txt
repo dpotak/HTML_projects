@@ -1,0 +1,1 @@
+This test is written in Python programming. It checks the presence of elements in HTML and the existence of CSS styles. 
