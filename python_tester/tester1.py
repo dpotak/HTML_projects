@@ -1,9 +1,10 @@
 from bs4 import BeautifulSoup
 import unittest
+from selenium import webdriver
 
 # Tester HTML
 class TestContentHTMLCode(unittest.TestCase):
-    #
+    # Open file html
     file_code = "C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\Portfolio.html"
     with open (file_code, "r", encoding="utf-8") as file:
         html_code = file.read()
@@ -17,7 +18,7 @@ class TestContentHTMLCode(unittest.TestCase):
 
 # Tester css 
 class TestContentCSSCode(unittest.TestCase):
-    #
+    # Open file css
     file_code_css = "C:\\Users\\darja\\OneDrive\\Desktop\\html_Progects\\HTML_projects\\HTML_Portfolio2_official\\css_prog\\portfolio_1.css"
     with open (file_code_css, "r") as file_css:
         css_code = file_css.read()
