@@ -1,5 +1,12 @@
-from bs4 import BeautifulSoup
-import unittest
+# BeautifulSoup - - It's a library for HTML and XML documents. It is used to 
+# retrieve data from the HTML code, especially if the 
+# contents of the web page that has already been 
+# uploaded need to be analysed.
+from bs4 import BeautifulSoup 
+import unittest 
+
+# Selenium - This is a browser automation tool, and WebDriver is its 
+# component for interacting with the browser (e.g. Chrome, Firefox).
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
