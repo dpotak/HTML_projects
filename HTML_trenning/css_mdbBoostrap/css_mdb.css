@@ -1,9 +1,21 @@
 .card-three {
-    display: flex;
-    margin-left: 15px;
+    display: flex;    
+}
+
+.card-three {
+    margin: 0px;
 }
 
 .btn-mdb {
     font-size: 15px;
 }
 
+.card-1 , .card-2 , .card-3 {
+    width: 440px;
+    height: 240px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-2 , .card-3 {
+    margin-left: 15px;
+}
