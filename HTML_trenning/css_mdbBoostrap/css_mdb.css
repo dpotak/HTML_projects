@@ -1,6 +1,15 @@
 .card-three {
     display: flex;  
 }
+
+.nav-navbar , ul , li {
+    display: flex;
+}
+
+ul , li {
+    margin-left: 15px;
+}
+
 .card-three {
     margin: 0px;
 }
