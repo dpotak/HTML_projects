@@ -6,3 +6,9 @@ body {
     color: white;
 }
 
+.card-1 , .card-2 , .card-3 {
+    width: 100px;
+    height: 45px;
+    background-color: rgb();
+    display: flex;
+}
